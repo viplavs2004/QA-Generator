@@ -34,7 +34,8 @@ The app provides a clean web interface to upload PDFs, view generated Q&A pairs,
 ### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/viplavs2004/QA-Generator.git
-cd QA-Generator  ```
+cd QA-Generator
+```
 
 
 Step 2: Create a Virtual Environment
@@ -45,39 +46,40 @@ venv\Scripts\activate
 
 # For macOS/Linux
 python3 -m venv venv
-source venv/bin/activate  ```
+source venv/bin/activate
+```
 
 Step 3: Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-
-If you don’t have a requirements.txt, generate one using:
-
-pip freeze > requirements.txt
-
-Step 4: Configure Environment Variables
+ Configure Environment Variables
 
 Create a .env file in the root directory and add your Google API Key:
-
-GOOGLE_API_KEY="YOUR_API_KEY_HERE"
-
-
 You can obtain an API key from Google AI Studio
-.
+```bash
+GOOGLE_API_KEY="YOUR_API_KEY_HERE"
+````
 
-Running the Application
 
-Start the FastAPI server:
 
-uvicorn app:app --reload
+
+Step 5: Run the Application
+
+```bash
+Python app.py
+```
 
 
 Open your browser and visit:
+```
 http://127.0.0.1:8000
+```
 
 Usage Guide
 
-Open the Web App → Go to http://127.0.0.1:8000
+Open the Web App → Go to  ```http://127.0.0.1:8000```
 
 Upload a PDF → Drag & drop or select a PDF file from your computer
 
