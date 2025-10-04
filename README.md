@@ -23,7 +23,7 @@ The app provides a clean web interface to upload PDFs, view generated Q&A pairs,
 ## Technology Stack
 - Backend: FastAPI  
 - AI Framework: LangChain  
-- LLM & Embeddings: Google Gemini API (`gemini-pro`, `text-embedding-004`)  
+- LLM & Embeddings: Google Gemini API (`gemini-2.0-flash`, `text-embedding-004`)  
 - Vector Store: FAISS  
 - Frontend: HTML, Tailwind CSS, JavaScript  
 
@@ -34,17 +34,18 @@ The app provides a clean web interface to upload PDFs, view generated Q&A pairs,
 ### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/viplavs2004/QA-Generator.git
-cd QA-Generator
+cd QA-Generator  ```
 
 
 Step 2: Create a Virtual Environment
+```bash
 # For Windows
 python -m venv venv
 venv\Scripts\activate
 
 # For macOS/Linux
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  ```
 
 Step 3: Install Dependencies
 pip install -r requirements.txt
